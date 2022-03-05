@@ -30,6 +30,7 @@ if not os.path.exists(new_file):
 
 ### Dosyaya PDF Eklemek (in Windows)
 Bunu paketleme sırasında yapıyoruz
+
 `...\pyinstaller.exe PythonFile.py --onefile --add-data "...\dosya.pdf;."`	(;. ek olarak koymamız gerekiyor)
 
 Bu tek başına yeterli değil. Aynı zamanda kodumuzun içinde exe'ye basıldığında bu dosyanın gösterilmesini sağlayacağız.
