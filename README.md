@@ -3,6 +3,7 @@ Bu projede ,başlangıçta, Atıl Samancıoğlu'nun "Python: Sıfırdan İleri S
 
 ### Exe'ye Çevirme İşlemi (in Windows)
 `pip install pyinstaller`
+
 pyinstaller.exe'nin konumunu buluyoruz (.../Scripts/pyinstaller.exe).
 `...\pyinstaller.exe PythonFile.py --onefile`
 
