@@ -14,7 +14,7 @@ Saldırı yapmak için aşağıdaki komutu çalıştırıyoruz.<br/><br/>
 `ettercap -Tq -M arp:remote -i eth0 /192.168.10.1// /192.168.10.131//`<br/><br/>
 Burada ///’ların bir anlamı var. mac_adress/ipv4/ipv6/port şeklinde girdi verebiliyoruz. Yukarıda ipv4 kullanarak bir saldırı yaptık. Önce modemin IP adresini, sonra kurbanın IP adresini yazdık. Bu komutu yazdıktan sonra kurban bir http sitesi üzerinden credentials girerse terminalimize düşecektir.
 ### Ettercap ile HTTPS siteler için saldırmak
-HTTPS sitelerden gelen bilgileri okumak için ya ettercap içindeki bir plugin'i, ya da sslstrip kullanmalıyız. sslstrip halihazırda yoksa indirmeliyiz. Lakin kurulumu ve çalıştırmasında bazen sorun çıkabiliyor. Bunun için internetten araştırma yapabilirsin. Benim karşılaştığım bir sorun vardı, çözümünü bulduğum video: [Sslstrip | requirement already satisfied: twisted in /usr/lib/python3/dist-packages (18.9.0)](https://www.youtube.com/watch?v=CCfJRYmJo2s&list=LL&index=1)<br/>
+HTTPS sitelerden gelen bilgileri okumak için ya ettercap içindeki bir plugin'i, ya da sslstrip kullanmalıyız. sslstrip halihazırda yoksa indirmeliyiz. Lakin kurulumu ve çalıştırmasında bazen sorun çıkabiliyor. Bunun için internetten araştırma yapmak gerekebilir. Benim karşılaştığım bir sorun vardı, çözümünü bulduğum video: [Sslstrip | requirement already satisfied: twisted in /usr/lib/python3/dist-packages (18.9.0)](https://www.youtube.com/watch?v=CCfJRYmJo2s&list=LL&index=1)<br/><br/>
 İlk olarak yönlendirme yapmalıyız.<br/><br/>
 `iptables -t nat -A PREROUTING -p tcp --destination-port 80 -j REDIRECT --to-port 10000`<br/><br/>
 Sonra `sslstrip` diyerek sslstrip'i çalıştırıyoruz. Bir başka terminale geçip aşağıdaki komutu çalıştırıyoruz.<br/><br/>
