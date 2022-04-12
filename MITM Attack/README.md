@@ -4,9 +4,8 @@ MITM (Man In The Middle) saldırısı yapmak için kullanılan bir sürü araç 
 Ettercap ile saldırı yapmadan önce /etc/ettercap/etter.conf dosyasında değişiklik yapmamız gerekiyor.<br/>
 `leafpad /etc/ettercap/etter.conf`<br/>
 komutu ile ilgili dosyayı açıyoruz.<br/>
-
-#####################################
-\# redir_command_on/off
+#####################################<br/>
+\# redir_command_on/off<br/>
 #####################################<br/>
 başlığı altında Linux bölmesinde redir_command_on ve redir_command_off satırlarının başında bulunan # karakterlerini siliyoruz. Sonrasında ettercap’i çalıştırabiliriz.<br/>
 `ettercap -Tq ///`<br/>
