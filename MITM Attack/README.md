@@ -1,5 +1,5 @@
 # MITM Saldırısı
-MITM (Man In The Middle) saldırısı yapmak için kullanılan bir sürü araç vardır. Benim tercihim ise ettercap. Sebebi ise kullanırken diğer araçlara nazaran (mitmproxy, bettercap gibi) daha az hata ile karşılaşmam. Bir diğer sebebi ise grafiksel arayüzünün de mevcut olması.<br/>
+MITM (Man In The Middle) saldırısı yapmak için kullanılan bir sürü araç vardır. Benim tercihim ise ettercap. Sebebi ise kullanırken diğer araçlara nazaran (mitmproxy, bettercap gibi) daha az hata ile karşılaşmam. Bir diğer sebebi ise grafiksel arayüzünün de mevcut olması.<br/><br/>
 Ettercap ile nasıl saldırı yapacağımıza geçmeden önce yapmamız gereken bir düzenleme var. IP yönlendirmeyi etkin hale getirmeliyiz.Bunun için aşağıdaki komutu çalıştırmalıyız.<br/><br/>
 `echo 1 > /proc/sys/net/ipv4/ip_forward`
 ### Ettercap ile HTTP siteler için saldırmak
