@@ -1,5 +1,5 @@
 # ethical-hacker
-Bu projede ,başlangıçta, Atıl Samancıoğlu'nun "Python: Sıfırdan İleri Seviyeye - Etik Hacker Örnekleriyle" kursunu takip ederek yazdığım kodlar vardır. Bunları kendim geliştireceğim ve yeni scriptler ekleyeceğim.
+Bu projede ,başlangıçta, birçok kursu (özellikle Atıl Samancıoğlu'nun kursları) takip ederek yazdığım kodlar/dökümanlar vardır. Bunları kendim geliştireceğim ve yeni scriptler/dökümanlar ekleyeceğim.
 
 ### Exe'ye Çevirme İşlemi (in Windows)
 `pip install pyinstaller`
